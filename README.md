@@ -1,0 +1,2 @@
+# GoS
+GameofSol landing page
