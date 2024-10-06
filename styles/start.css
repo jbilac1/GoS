@@ -121,7 +121,7 @@
 }
 @media(max-width: 480px){
     .carousel-inner{
-        max-width: calc(100% - 50px);
+        max-width: calc(100% - 100px);
     }
     .items{
         flex-direction: column;
