@@ -120,11 +120,10 @@
     }
 }
 @media(max-width: 480px){
-    .carousel{
-        left: 50px;
-    }
+    
     .carousel-inner{
         max-width: calc(100% - 50px);
+        left: 50px;
     }
     .items{
         flex-direction: column;
