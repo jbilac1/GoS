@@ -68,15 +68,17 @@ body{
     overflow: hidden;
     width: 50%;
     height: 800px;
+    display:flex;
+    justify-content: center;
+    align-items: end;
     
     
 }
 .signup{
-    position: absolute;
-    bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    left: calc(50% - 235px);
+    
 }
 .signup p{
     font-size: 38px;
