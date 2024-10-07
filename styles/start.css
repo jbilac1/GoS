@@ -313,6 +313,12 @@ body{
     .right{
         height: 1200px;
     }
+    .album{
+        height:500px;
+    }
+    .market{
+        height: 700px;
+    }
     .album h3, .market h3{font-size: 22px;}
     .signup{left: calc(50% - 140px)}
     .signup p{font-size: 24px}
