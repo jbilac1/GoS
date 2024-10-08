@@ -3,7 +3,7 @@ body{
     overflow-x: hidden;
 }
 .page {
-    background-image: url('./img/landing.jpg');
+    background-image: url('../img/landing.jpg');
     background-position: center top;
     background-size: stretch;
     background-repeat: no-repeat;
