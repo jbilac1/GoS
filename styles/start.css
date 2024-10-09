@@ -141,6 +141,8 @@ body{
         background: rgba(30, 30, 30, 0.8)
         
     }
+    .carousel{
+        padding: 0 50px;
 
     .link {
         padding: 20px 0;
