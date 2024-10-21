@@ -1,177 +1,184 @@
 body{
     margin: 0;
-    overflow-x: hidden;
+    padding: 0;
+    font-family: "Kalam";
 }
-.page {
-    background-image: url('../img/landing.jpg');
-    background-position: center;
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    padding: 25px 45px;
+    background: #1e1e1e;
+    position:relative;
+}
+.hambi{
+    display: none;
+}
+.links a, .brand a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.links a:hover, .brand a:hover{
+    border-radius: 5px;
+    background: #f2f2f2;
+    color: #770048;
+}
+.links a:last-of-type{
+    margin-left: 25px;
+}
+.main{
+    height: calc(100vh - 89px);
+    background: url('../img/landingFinal1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
-    height: 100vh;
+    background-position: center;
+    position: relative;
+    z-index: 1;
 }
-
-.navbar {
-    padding: 30px 50px;
+.user-menu{
+    width: 400px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-}
-
-.links {
-    display: flex;
+    background: #1e1e1e;
     position: absolute;
-    right: 50px;
-    z-index: 0;
+    border-radius: 5px;
+    top: 20px;
+    right: 20px;
 }
-
-.brand,
-.link {
-    text-decoration: none;
-    cursor: pointer;
-    color: #fff;
-}
-
-.brand img {
-    margin-right: 10px;
-    
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index:2;
-}
-
-.brand span {
-    font-size: 20px;
-    text-shadow: 2px 2px 2px #000;
-    
-}
-
-.link {
-    font-size: 20px;
-    margin-left: 20px;
-    text-shadow: 2px 2px 2px #000;
-}
-
-.link:nth-of-type(1) {
-    margin-left: 0;
-}
-.brand:hover span, .link:hover{
-    color: #772650;
-    text-shadow: 1px 1px 1px #d2d2d2;
-}
-
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.hamburger span {
-    height: 2px;
-    width: 100%;
-    background: #fff;
-}
-
-.logo-img {
-    height: 50px;
-    width: auto;
-}
-
-.main{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    height: calc(100% - 110px);
-    align-items: center;
-    z-index: 0;
-    
-}
-.carousel{
-    max-width: 600px;
-}
-.carousel-item h3{
-    text-align: center;
+.user-menu span{
+    padding: 5px 10px;
     color: #f2f2f2;
-    text-shadow: 2px 2px 2px #000;
+    background: #770048;
+    border-radius: 5px;
 }
-
-.footer{
+.mountain{
+    width: 150px;
+    height: auto;  
     position: absolute;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0;
+    left: 39%;
+    transition: all 0.3s ease-in-out;
+}
+.mountain:hover{
+    transform: scale(1.2);
 }
 
-@media screen and (max-width: 768px) {
-    .hamburger {
-        height: 20px;
-        width: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+/* .app-menu{
+    width: 600px;
+    padding: 20px 0;
+    background: rgba(119, 0, 72, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 300px);
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    cursor:pointer;
+}
+.option img{
+    width: 45px;
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}
+.option img:hover{
+    transform: scale(1.3);
+} */
+.option{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(119, 0, 72, 0.7);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f2f2f2;
 
-    .links {
-        top: 110px;
+}
+
+.option img{
+    width: 75px;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+}
+.option img:hover{
+    transform: scale(1.2);
+}
+.stake{
+    left: 20%;
+    bottom: 20%;  
+}
+.album{
+    left: 60%;
+    bottom: 20%;  
+}
+.challenges{
+    left: 10%;
+    top: 100px;  
+}
+.market{
+    left: 55%;
+    top: 100px;  
+}
+@media screen and (max-width: 600px){
+    .links{
         display: none;
-        transition: right 0.3s ease-in-out;
-
     }
-
-    .open {
+    .hambi{
+        width: 35px;
+        height: 35px;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+    }
+    .hambi span{
+        height: 2px;
         width: 100%;
-        padding: 110px 50px 50px;
-        background: rgba(30, 30, 30, 0.8)
+        background: #f2f2f2;
+    }
+    
+    
+    .open{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(30, 30, 30, 0.8);
+        position: absolute;
+        top: 89px;
+        right: 0;
+        width: 100%;
+        height: calc(100vh - 89px);
+        z-index: 2;
+    }
+    
+    .links a:last-of-type{
+        margin-left:0;
+        margin-top: 50px;
+    }
+    .stake{
+        left: 10%;
         
     }
-    .carousel{
-        padding: 0 50px;
-        box-sizing: border-box;
-    }
-    .link {
-        padding: 20px 0;
-        width: 100%;
-        text-align: center;
-        margin-left: 0;
-        text-transform: uppercase;
-    }
-
-    .hamburger span {
-        transition: all 0.5s ease-in-out;
-    }
-
-    .link:hover {
-        background: #772650;
-        color: #f2f2f2;
-        text-shadow: none;
-    }
-
-    .r1 {
-        transform: translateY(9px) rotate(45deg);
-    }
-
-    .r2 {
-        transform: translateY(-9px) rotate(-45deg);
-    }
-
-    .r3 {
-        display: none;
+    .album{
+        left: 55%;
     }
 }
